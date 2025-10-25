@@ -59,7 +59,7 @@ const register = async (userData) => {
       if (response.data.user) {
         const userData = {
           id: response.data.user.id,
-          name: response.data.user.name,
+          username: response.data.user.username,
           email: response.data.user.email,
           role: response.data.user.role,
           isAdmin: response.data.user.role === "admin",
@@ -108,7 +108,7 @@ const login = async (credentials) => {
       if (response.data.user) {
         const userData = {
           id: response.data.user.id,
-          name: response.data.user.name,
+          username: response.data.user.username,
           email: response.data.user.email,
           role: response.data.user.role,
           isAdmin: isAdmin,
